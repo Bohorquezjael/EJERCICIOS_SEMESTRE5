@@ -1,0 +1,52 @@
+
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}input[type=number] { -moz-appearance:textfield; 
+}.bkgn-img{
+    background: url(https://mxcity.mx/wp-content/uploads/2016/09/AppleStore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}.formulario{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    background: #F9EBC8;
+    box-shadow: 5px 8px #dae5d0;
+    margin:auto;
+    border-radius: 450px;
+    left: 35%;
+    top: calc(100%/3);
+}h1{
+    font-family: 'comic sans ms';
+    margin: 10px;
+    margin-bottom: 15px;
+}input[type=number]{
+    border-radius: 10px;
+    padding: 3px;
+    width: 70px;
+    background-color: rgb(138, 57, 30);
+}label{
+    font-family: 'Jetbrains mono', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 8px;
+    font-size: 22px;
+}input[type=button]{
+    border-radius: 10px;
+    padding: 5px;
+    color: red;
+    background-color: aqua;
+}.logo{
+    background: url(https://www.pngitem.com/pimgs/m/207-2076850_old-original-apple-logo-retro-rainbow-logo-apple.png);
+    width: 50px;
+    height: 50px;
+    display: inline;
+    overflow: visible;
+}

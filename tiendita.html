@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita</title>
+</head>
+<style>
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}input[type=number] { -moz-appearance:textfield; }
+    *{
+        background-color: rgb(0, 255, 170);
+        text-align:center;
+    }.subir, .tnumber{
+        border-radius: 20;
+    }.tnumber{
+        height: fit-content;
+        width:60px;
+    }.lisdes:focus{
+        color:rgb(166, 255, 22);
+    }
+    </style>
+<body>
+    <h1 id="titulo">TIENDITA "EL BARAIMITAS"</h1>
+    <h3>PRODUCTOS DISPONIBLES</h3>
+    <form name="lista_articulos" id="l_arti" method="post" action="presupuesto.php">
+        <select name="artiklos" id="products" class="lisdes">
+            <option value="28999">Iphone 14 Pro Max</option>
+            <option value="19999">Apple Watch Ultra</option>
+            <option value="549">Cable de Carga Ligthning</option>
+            <option value="3299">Apple Pencil 2da Generacion</option>
+            <option value="549">Cubo de Carga 20W</option>
+            <option value="28999">Ipad Pro</option>
+            <option value="5999">Airpods Pro 2da Generacion</option>
+            <option value="999">Cable de Carga Magsafe</option>
+        </select>
+        <br><br>
+        <label for="canti">Cantidad: </label>
+        <input   class="tnumber" id="noarti" required="yes" name="canti" pattern="{1,10000}">
+        <br><br>
+        <h3>¿DESEA PAGAR A MSI?</h3>
+        <label for="si">Si</label> <input  required="yes" type="radio"value="si" class="contado" name="cont" id="si">
+        <label for="si">No</label> <input type="radio" required="yes" value="no" class="contado" name="cont" id="no">
+        <br><br>
+        <label for="5">5 meses</label> <input type="radio" value="5" name="meses" class="meses" id="5">
+        <label for="8">8 meses</label> <input type="radio" value="8" name="meses" class="meses" id="8">
+        <label for="9">9 meses</label> <input type="radio" value="9" name="meses" class="meses" id="9">
+        <label for="10">10 meses</label> <input type="radio" value="10" name="meses" class="meses" id="10">
+        <br><br>
+        <input type="submit" id="subir" class="subir" name="subir" value="REALIZAR COMPRA">
+    </form>
+</body>
+</html>
